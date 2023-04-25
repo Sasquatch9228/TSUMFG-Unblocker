@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TSUMFG - Main part</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .about {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div align="center">
+  <h1>Just to let you know, this MAY work on lightspeed and blocksi. (we know blocksi fr works, but lightspeed is a maybe, idk if they patched it)</h1>
+    <h2>Search anything embeddable.</h2>
+    <h3><a class="about" href="about.html">About This Expl<span>oi</span>t.</a></h3>
+    <script>
+        function create() {
+            var url = document.getElementById('input').value;
+
+            var win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url.startsWith("https://") ? url : "https://" + url
+            win.document.body.appendChild(iframe);
+        }
+        </script>
+        <input type="text" value="" placeholder="Search & profit easily!" id='input' autofocus>
+        <button class="searchbtn" onclick='create()'>Search!</button>
+</body>
+</html>
