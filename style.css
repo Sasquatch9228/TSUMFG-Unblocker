@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body {
-  background-color: #1100ff;
+  background-color: #000;
   color: white;
 	font-family: 'Montserrat', sans-serif;
   overflow: hidden;
@@ -9,7 +9,7 @@ body {
   position: absolute;
   top: 35%;
   left: 41.5%;
-  background-color: #eb0000;
+  background-color: transparent;
   border: none;
   border-radius: 1vw;
   color: #fff;
